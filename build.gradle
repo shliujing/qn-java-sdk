@@ -1,0 +1,16 @@
+group 'com.lj'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'com.qiniu', name: 'qiniu-java-sdk', version: '7.2.11'
+}
