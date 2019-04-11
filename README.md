@@ -2,9 +2,7 @@
 
 代码为使用 qiniu-java-sdk，调测七牛产品全家桶。
 
-
-
-
+clone 代码后，自行将补齐 me.lj.qiniu.config.ConfigOrigin.java 修改为 me.lj.qiniu.config.Config.java，并补全 ak，sk 等信息。
 
 ## 历史
 
