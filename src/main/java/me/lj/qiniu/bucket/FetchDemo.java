@@ -26,9 +26,10 @@ public class FetchDemo {
         //文件保存的空间名和文件名
         String bucket = "test-pub";
 //        String key = "jpg/lengzhu.jpg";
-        String key = "png/0124/3.png";
+//        String key = "png/0124/3.png";
 //        String key = "jpg/lengzhu.jpg";
 //        String key = "download/cooleditpro.rar";
+        String key = "download/FuelforKeynote14.dmg";
 //        String key = "jpg/fanbingbing4.jpg";
 //        String key = "jpg/lufei2.jpg";
 //        String key = "download/wordpress-5.0.2-zh_CN.zip";
@@ -38,7 +39,8 @@ public class FetchDemo {
 
         //要fetch的url
 //        String url = "http://yezi.iamlj.com/lengzhu.jpg";
-        String url = "https://img.whatthehell.cn/FnVPkxYbmdSbjvZ5tmgIg4miACgs";
+//        String url = "https://img.whatthehell.cn/FnVPkxYbmdSbjvZ5tmgIg4miACgs";
+        String url = "http://160721.171.ctc.data.tv002.com/down/8a78188dbe70653160fcc148226c30d8-517798493/FuelforKeynote14.dmg?cts=dx-f-D116A236A177A50Faceea&ctp=116A236A177A50&ctt=1555620795&limit=1&spd=90000&ctk=c3d09aeac5e38fd911dbd71764f40d8e&chk=8a78188dbe70653160fcc148226c30d8-517798493&mtd=1";
 //        String url = "http://sd.downxia.com/down/cooleditpromac.rar";
 //        String url = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1160461963,3713854615&fm=26&gp=0.jpg";
 //        String url = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546574245009&di=18b77ca4cedc97972c197762bd6f1eb8&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201202%2F27%2F20120227224843_vZaA8.jpg";

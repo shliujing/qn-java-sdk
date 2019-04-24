@@ -19,7 +19,7 @@ public class AuthDemo {
         // 生成上传 token
         String bucket = "test-pub";
         String key = "test/file/190221.png";
-        long expires = 3600l;
+        long expires = 3600;
         StringMap policy = new StringMap();
         String callbackUrl = "http://practice.dandantuan.com/demo/qiniu/qiniu_sdk_notify.php";
         String callbackBody = "{\"filename\":\"$(fname)\",\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"fsize\":$(fsize),\"bucket\":\"$(bucket)\"}";

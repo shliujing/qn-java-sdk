@@ -23,8 +23,8 @@ import java.util.List;
  * 下载七牛log
  */
 public class DownloadQiniuCdnLog {
-    final static String ACCESS_KEY =  Config.ACCESS_KEY;
-    final static String SECRET_KEY =  Config.SECRET_KEY;
+    final static String ACCESS_KEY = Config.ACCESS_KEY;
+    final static String SECRET_KEY = Config.SECRET_KEY;
     final static String LOGURL = "test-pub.iamlj.com";
     final static String DIRECTORY = "/Users/jingliu/Desktop/file";
 

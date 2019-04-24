@@ -23,7 +23,7 @@ public class Upload {
     //    String key = "download/wordpress-5.0.2-zh_CN.zip";
     //上传文件的路径
 //    String FilePath = "/Users/jingliu/local/doc/企业微信/2018-11/对象存储竞品分析_V2.pptx";//小文件
-    String FilePath = "/Users/jingliu/Desktop/test-idcard.jpg";//小文件
+    String FilePath = "/Users/jingliu/Desktop/upload-test-data/test-idcard.jpg";//小文件
 
     //密钥配置
     Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
@@ -44,7 +44,7 @@ public class Upload {
     public String getUpToken() {
         String tokenOri = auth.uploadToken(bucketname, key);
         String tokenOri1 = auth.uploadToken(bucketname);
-        String token = auth.uploadToken(bucketname, key, 3600, new StringMap()
+        String token = auth.uploadToken(bucketname, key, -3600, new StringMap()
                 .put("mimeLimit", "!application/zip")
                 .put("callbackUrl", "https://practice.dandantuan.com/demo/qiniu/qiniu_sdk_notify.php")
                 .put("callbackBody", "filename=$(fname)&key=$(key)&filesize=$(fsize)&deleteAfterDays=1")

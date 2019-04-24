@@ -33,7 +33,7 @@ public class UploadPfops {
     String persistentNotifyUrl = callbackUrl;
     String callbackHost = "practice.dandantuan.com";
     //    String callbackBody = "key=$(fname)&fsize=$(fsize)";
-    String callbackBody = "filename=$(fname)&filesize=$(fsize)";
+    String callbackBody = "{\"filename\":\"$(fname)\",\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"fsize\":$(fsize),\"bucket\":\"$(bucket)\"}";
     String callbackBodyType = "application/json";
 
     //可以对转码后的文件进行使用saveas参数自定义命名，当然也可以不指定文件会默认命名并保存在当前空间。
@@ -70,6 +70,7 @@ public class UploadPfops {
                 .put("deleteAfterDays", 1)
                 .put("callbackUrl", callbackUrl)
                 .put("callbackBody", callbackBody)
+                .put("callbackBodyType", callbackBodyType)
                 .put("persistentOps", pfops)
                 .put("persistentNotifyUrl", persistentNotifyUrl)
                 .put("persistentPipeline", pipeline), true);

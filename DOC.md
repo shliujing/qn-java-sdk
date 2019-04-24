@@ -141,6 +141,8 @@ http://api.qiniu.com/status/get/prefop?id=z0.5c2df5f838b9f349c81f4625
 
 ![](http://i.iamlj.com/19-1-3/16821026.jpg)
 
+https://github.com/shliujing/qn-java-sdk/blob/master/src/main/java/me/lj/qiniu/bucket/UploadPfops720P.java
+
 ## 人脸1:1
 
 ![](http://i.iamlj.com/19-1-4/60568073.jpg)
