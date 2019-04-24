@@ -19,6 +19,7 @@ public class UploadPfops720P {
     String bucketname = Config.BUCKET_NAME;
     //上传到七牛后保存的文件名
     String key = "mp4/1.mp4";
+    //上传成功触发数据处理后的新文件名
     String newKey = "mp4/720p/科目2-1号道考试车模拟X.mp4";
 
     //上传文件的路径
@@ -32,7 +33,7 @@ public class UploadPfops720P {
     String callbackUrl = "http://practice.dandantuan.com/demo/qiniu/qiniu_sdk_notify.php";
     String callbackHost = "practice.dandantuan.com";
     //    String callbackBody = "key=$(fname)&fsize=$(fsize)";
-    String callbackBody = "filename=$(fname)&filesize=$(fsize)&key=$(key)";
+    String callbackBody = "{\"filename\":\"$(fname)\",\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"fsize\":$(fsize),\"bucket\":\"$(bucket)\"}";
     String callbackBodyType = "application/json";
 
     //可以对转码后的文件进行使用saveas参数自定义命名，当然也可以不指定文件会默认命名并保存在当前空间。
@@ -60,6 +61,7 @@ public class UploadPfops720P {
                 .put("deleteAfterDays", 1)
                 .put("callbackUrl", callbackUrl)
                 .put("callbackBody", callbackBody)
+                .put("callbackBodyType", callbackBodyType)
                 .put("persistentOps", pfops)
                 .put("persistentNotifyUrl", persistentNotifyUrl)
                 .put("persistentPipeline", pipeline), true);
