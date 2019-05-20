@@ -16,14 +16,16 @@ public class UploadPfops720P {
     //设置好账号的ACCESS_KEY和SECRET_KEY
     String ACCESS_KEY = Config.ACCESS_KEY;
     String SECRET_KEY = Config.SECRET_KEY;
-    String bucketname = Config.BUCKET_NAME;
+    String bucketname = "mengda";
     //上传到七牛后保存的文件名
     String key = "mp4/1.mp4";
     //上传成功触发数据处理后的新文件名
-    String newKey = "mp4/720p/科目2-1号道考试车模拟X.mp4";
+    String newKey = "mengda/mp4/蒙大后台-老师操作.mp4";
+//    String newKey = "mengda/mp4/蒙大后台-管理员操作.mp4";
 
     //上传文件的路径
-    String FilePath = "D:\\BaiduNetdiskDownload\\科目2-1号道考试车模拟.mp4";
+    String FilePath = "/Users/jingliu/Desktop/蒙大后台-老师操作.mov";
+//    String FilePath = "/Users/jingliu/Desktop/蒙大后台-管理员操作.mov";
 
     //设置转码操作参数
     String fops = "avthumb/mp4/vcodec/libx264/s/1280x720";

@@ -18,7 +18,7 @@ public class PfopVframe {
         String SECRET_KEY = Config.SECRET_KEY;
         Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
         //新建一个OperationManager对象
-        OperationManager operater = new OperationManager(auth, new Configuration(Zone.autoZone())); // todo try  auth, new Configuration(Zone.autoZone())
+        OperationManager operater = new OperationManager(auth, new Configuration(Zone.autoZone()));
         //设置要转码的空间和key，并且这个key在你空间中存在
         String bucket = "test-pub";
         //视频名

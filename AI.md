@@ -11,9 +11,9 @@
 其他的接口，触类旁通，换下请求url 和参数即可
 
 
-
 ## 人脸识别
 
+文件 https://github.com/shliujing/qn-java-sdk/blob/master/src/main/java/me/lj/qiniu/ai/FaceDetect.java
 ![](http://i.iamlj.com/18-9-3/24583009.jpg)
 
 ## 图片打标

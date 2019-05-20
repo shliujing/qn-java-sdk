@@ -23,7 +23,7 @@ public class UploadCallback {
     //上传到七牛后保存的文件名
     String key = "qiniu/0129/qiniu-desktop-2.png";
     //上传文件的路径
-    String FilePath = "/Users/jingliu/Desktop/test-desktop.png";
+    String FilePath = "/Users/jingliu/Desktop/upload-test-data/1.png";
     // 过期时间
     long expires = 3600;
     //允许类型

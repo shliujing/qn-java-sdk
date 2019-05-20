@@ -15,8 +15,10 @@ public class CdnRefreshUrlsDemo {
         CdnManager c = new CdnManager(auth);
         //待刷新的链接列表
         String[] urls = new String[]{
-                "https://i.iamlj.com/download/acp.zip",
-                "http://i.iamlj.com/download/acp.zip"
+                "http://mdcdn.iamlj.com/mengda/mp4/%E8%92%99%E5%A4%A7%E5%90%8E%E5%8F%B0-%E8%80%81%E5%B8%88%E6%93%8D%E4%BD%9C.mp4",
+                "http://mdcdn.iamlj.com/mengda/mp4/蒙大后台-老师操作.mp4",
+                "http://mdcdn.iamlj.com/mengda/mp4/%E8%92%99%E5%A4%A7%E5%90%8E%E5%8F%B0-%E7%AE%A1%E7%90%86%E5%91%98%E6%93%8D%E4%BD%9C.mp4",
+                "http://mdcdn.iamlj.com/mengda/mp4/蒙大后台-管理员操作.mp4"
         };
         try {
             //单次方法调用刷新的链接不可以超过100个

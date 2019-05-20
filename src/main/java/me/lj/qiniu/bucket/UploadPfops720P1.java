@@ -18,8 +18,8 @@ public class UploadPfops720P1 {
     String SECRET_KEY = Config.SECRET_KEY;
     String bucketname = Config.BUCKET_NAME;
     //上传到七牛后保存的文件名
-    //    String key = "mov/test.mov";
     String newKey= "mp4/720p/科目2-道路1考试车模拟X.mp4";
+    //转码后的名称
     String key  = "mp4/2.mp4";
     //上传文件的路径
     String FilePath = "C:\\Users\\Administrator\\Documents\\Tencent Files\\2080856401\\FileRecv\\MobileFile\\科目2-道路1考试车模拟.mp4";
@@ -41,16 +41,6 @@ public class UploadPfops720P1 {
 
     //密钥配置
     Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
-
-    ///////////////////////指定上传的Zone的信息//////////////////
-    //第一种方式: 指定具体的要上传的zone
-    //注：该具体指定的方式和以下自动识别的方式选择其一即可
-    //要上传的空间(bucket)的存储区域为华东时
-    // Zone z = Zone.zone0();
-    //要上传的空间(bucket)的存储区域为华北时
-    // Zone z = Zone.zone1();
-    //要上传的空间(bucket)的存储区域为华南时
-    // Zone z = Zone.zone2();
 
     //第二种方式: 自动识别要上传的空间(bucket)的存储区域是华东、华北、华南。
     Zone z = Zone.autoZone();
