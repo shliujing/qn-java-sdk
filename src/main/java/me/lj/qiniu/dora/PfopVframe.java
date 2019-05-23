@@ -25,13 +25,17 @@ public class PfopVframe {
         String key = "11.mp4";
         //图片名
         String newkey = "png/vframe/11.png";
+        String newkey1 = "png/vframe/22.png";
         //设置转码操作参数
         String fops = "vframe/jpg/offset/1/w/480/h/360/rotate/90";
+        String fops1 = "vframe/jpg/offset/1/w/720/h/480/rotate/180";
         //设置转码的队列
         String pipeline = "12349";
         //可以对转码后的文件进行使用saveas参数自定义命名，当然也可以不指定文件会默认命名并保存在当前空间。
         String urlbase64 = UrlSafeBase64.encodeToString(bucket + ":" + newkey);
+        String urlbase641 = UrlSafeBase64.encodeToString(bucket + ":" + newkey1);
         String pfops = fops + "|saveas/" + urlbase64;
+        pfops = pfops + ";" +fops1 + "|saveas/" + urlbase641;
         //设置pipeline参数
         StringMap params = new StringMap().putWhen("force", 1, true).putNotEmpty("pipeline", pipeline);
         try {
