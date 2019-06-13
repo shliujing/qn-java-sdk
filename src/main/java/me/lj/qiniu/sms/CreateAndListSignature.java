@@ -28,7 +28,7 @@ public class CreateAndListSignature {
         host = "sms.qiniuapi.com";
         contentType = "application/json";
         method = "POST";
-        body = "{\"signature\":\"Test2\",\"source\":\"website\"}";
+        body = "{\"signature\":\"Test0613\",\"source\":\"website\"}";
         response = RPCCall.call(auth, url, host, contentType, method, body);
         System.out.println("Create Res: " + response.bodyString());
 
