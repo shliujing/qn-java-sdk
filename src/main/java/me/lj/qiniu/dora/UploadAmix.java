@@ -17,18 +17,18 @@ public class UploadAmix {
     String ACCESS_KEY = Config.ACCESS_KEY;
     String SECRET_KEY = Config.SECRET_KEY;
     String bucketname = Config.BUCKET_NAME;
-    String key = "test/1.mp4";//
-    String newKey = "test/1.avi";
-    String FilePath = "/Users/jingliu/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/777fc54307f5b44a2070983f81dd6e2f/Message/MessageTemp/771a590b77d6aa281ffb6922fdcd1623/Video/1553247725972321.mp4";
+    String FilePath = "/Users/jingliu/Desktop/1.mp3";
+    String key = "mp3/mp3/19-06-13/111.mp3";//
+    String key2 = "http://test-pub.iamlj.com/mp3/mp3/19-06-13/2.mp3";
+    String newKey = "mp3/mp3/19-06-13/333.mp3";
 
     //设置转码操作参数
-    String fops = "avthumb/avi";
+    String fops = "avthumb/mp3/amix/" + UrlSafeBase64.encodeToString(key2);
+    ;
     //设置转码的队列
     String pipeline = "12349";
     String callbackUrl = "http://practice.dandantuan.com/demo/qiniu/qiniu_sdk_notify.php";
     String persistentNotifyUrl = callbackUrl;
-    String callbackHost = "practice.dandantuan.com";
-    //    String callbackBody = "key=$(fname)&fsize=$(fsize)";
     String callbackBody = "{\"filename\":\"$(fname)\",\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"fsize\":$(fsize),\"bucket\":\"$(bucket)\"}";
     String callbackBodyType = "application/json";
 
