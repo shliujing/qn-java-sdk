@@ -42,6 +42,5 @@ public class CreateAndListTemplate {
         // {"items":[{"audit_status":"passed","created_at":1558536729,"description":"测试 验证码","id":"1131211147840589824","name":"验证码","reject_reason":"","signature_id":"1131017766455742464","signature_text":"新业小站","template":"您的验证码为: ${code}, 该验证码5分钟内有效, 请勿泄露给他人。","type":"verification","uid":1380569221,"updated_at":1558592462,"variable_count":0},{"audit_status":"reviewing","created_at":1558594712,"description":"测试","id":"1131454346853097472","name":"test-t","reject_reason":"","signature_id":"1131017766455742464","signature_text":"新业小站","template":"Test1","type":"verification","uid":1380569221,"updated_at":1558594712,"variable_count":0}],"page":1,"page_size":20,"total":2}
         System.out.println("List Res: " + response.bodyString());
 
-
     }
 }

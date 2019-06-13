@@ -20,7 +20,7 @@ public class AmixDemo {
         String bucketname = "test-pub";
         String key = "mp3/mp3/19-06-13/1.mp3";//文件 1，已存在存储空间，只写文件名即可
         String key2 = "http://test-pub.iamlj.com/mp3/mp3/19-06-13/2.mp3";// 文件 2，用于混音的文件，写 url
-        String newKey = "mp3/mp3/19-06-13/3.mp3";//混音后的合成文件
+        String newKey = "mp3/mp3/19-06-13/4.mp3";//混音后的合成文件
         //设置转码的队列
         String pipeline = "12349";
 
@@ -31,6 +31,8 @@ public class AmixDemo {
         //设置转码操作参数
         String fops = "avthumb/mp3/amix/" + file2Base64;
         String pfops = fops + "|saveas/" + urlbase64;
+        //回调 url
+        String notifyUrl = "http://practice.dandantuan.com/demo/qiniu/qiniu_sdk_notify.php";
 
         //密钥配置
         Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
@@ -43,7 +45,7 @@ public class AmixDemo {
 
         String id = null;
         try {
-            id = operationManager.pfop(bucketname, key, pfops, pipeline, true);
+            id = operationManager.pfop(bucketname, key, pfops, pipeline, notifyUrl,true);
         } catch (QiniuException e) {
             e.printStackTrace();
         }
