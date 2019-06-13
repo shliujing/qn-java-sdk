@@ -1,4 +1,4 @@
-package me.lj.qiniu.sms;
+package me.lj.qiniu.utils;
 
 /**
  * Created by IntelliJ IDEA.
